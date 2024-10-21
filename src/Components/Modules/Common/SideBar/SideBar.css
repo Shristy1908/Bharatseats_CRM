@@ -1,0 +1,88 @@
+.main-sidebar {
+  font-family: Arial, sans-serif; /* Change font family */
+  z-index: 9999;
+}
+
+/* .nav-sidebar .nav-item:hover > .nav-link {
+  background-color: black;
+  color: white;
+} */
+
+.brand-link {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.brand-image {
+  margin-right: 10px;
+}
+
+.Brandheading {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 0.8cap;
+  font-size: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.nav-sidebar .nav-item > .nav-link {
+  color: #fff;
+  font-size: 0.88rem;
+  font-weight: normal;
+}
+
+.nav-treeview .nav-item .nav-link .nav-icon {
+  font-size: 10px;
+}
+
+/* Hover effect for sidebar content */
+.nav-sidebar .nav-treeview .nav-item > .nav-link:hover {
+  background-color: #609ceb;
+  color: white;
+}
+
+.nav-sidebar .nav-treeview {
+  display: none;
+  padding-left: 1rem;
+  background-color: black;
+}
+.nav-sidebar .nav-treeview.show {
+  display: block;
+}
+
+.nav-sidebar .nav-treeview .nav-item > .nav-link {
+  color: #fff;
+}
+.nav-treeview .nav-link .nav-icon {
+  font-size: 0.73em;
+}
+
+.nav-sidebar .nav-icon {
+  margin-right: 0.5rem;
+  font-size: 0.875rem;
+  color: #fff;
+}
+
+.nav-sidebar .nav-treeview .nav-icon {
+  color: greenyellow;
+}
+
+.right {
+  margin-left: auto;
+}
+
+.fa-angle-down,
+.fa-angle-up {
+  transition: transform 0.3s;
+  color: yellowgreen; /* Arrow icon color */
+}
+/* 
+li.nav-item:hover {
+  color: black;
+} */
+/* a.Brandheading{
+  text-decoration: none;
+} */

@@ -1,0 +1,579 @@
+.QuestionniareContainer {
+    width: 96%;
+    margin: 0px auto;
+}
+
+.QuestionniareContainer p {
+    font-size: 16px;
+}
+
+.headerWithBtn .backBtn {
+    background-color: #d64228;
+    border: none;
+}
+
+.headerWithBtn .backBtn:hover {
+    background-color: #de6d59;
+}
+
+.BharatSeatsHeader {
+    background-color: #3d8bda;
+    color: #fff;
+    padding: 20px 0px;
+    text-align: center;
+    margin: 20px auto;
+    margin-top: 0px;
+    border-radius: 8px;
+    font-weight: 550;
+    font-size: 20px;
+}
+
+/* CompanyProfileForm styling */
+
+.companyAddressFrom {
+    display: flex;
+    gap: 20px;
+}
+
+.registeredOffice,
+.headOffice,
+.plant {
+    flex: 1;
+}
+
+.vertical-divider {
+    width: 2px;
+    background-color: #ccc;
+    margin: 0 20px;
+}
+
+/* contact styling */
+.ContactPersonForm {
+    margin-top: 20px;
+}
+
+.contactRow {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.addNewButton {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.addNewButton:hover {
+    background-color: #45a049;
+}
+
+/* ManufacturedProducts */
+.ManufacturedForm {
+    margin-top: 20px;
+}
+
+.productRow {
+    display: flex;
+    gap: 10px;
+    /* Space between input fields horizontally */
+    margin-bottom: 8px;
+    /* Space between rows */
+}
+
+.addNewButton {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.addNewButton:hover {
+    background-color: #45a049;
+}
+
+/* Certification details  */
+.CertificateDetails {
+    margin-top: 20px;
+}
+
+.certificationRow {
+    display: flex;
+    gap: 10px;
+    /* Space between input fields horizontally */
+    margin-bottom: 15px;
+    /* Space between rows */
+}
+
+.addNewButton {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.addNewButton:hover {
+    background-color: #45a049;
+}
+
+/* PartnerShipTieUp */
+
+.partnerShipForm {
+    margin-top: 20px;
+}
+
+.partnerRow {
+    display: flex;
+    gap: 5px;
+    /* Space between input fields horizontally */
+    margin-bottom: 5px;
+    /* Space between rows */
+}
+
+.addNewButton {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.addNewButton:hover {
+    background-color: #45a049;
+}
+
+.CompanyProfileForm label,
+.FinancialDetailForm label,
+.HRDetails label,
+.TechnicalDetails label,
+.TechnicalDetails label {
+    font-size: 15px;
+}
+
+.VendorIntro,
+.CompanyName,
+.CompanyAddress,
+.ContactPerson,
+.ManufacturedProducts,
+.CertificateDetails,
+.BarCodingDetails,
+.PlantDetail,
+.PartnerShipTieUp,
+.otherDetails,
+.MaterialTransportMode,
+.futureExpansions {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgb(192, 191, 191);
+    padding: 20px 20px;
+    margin: 20px auto;
+}
+
+.VendorIntro p,
+.CompanyName p,
+.CompanyAddress p,
+.ContactPerson p,
+.ManufacturedProducts p,
+.CertificateDetails p,
+.BarCodingDetails p,
+.PlantDetail p,
+.PartnerShipTieUp p,
+.otherDetails p,
+.MaterialTransportMode p,
+.futureExpansions p {
+    color: #216ebc;
+    font-weight: 600;
+}
+
+.VendorIntro .vendorIntroInputContainer,
+.companyAddressFrom,
+/* .ContactPersonForm, */
+/* .ManufacturedForm, */
+.YearBarcodingForm,
+.QualityName,
+.PlantDetilInputForm
+
+/* .partnerShipForm, */
+/* .OtherDetailForm, */
+/* .futureExpansionsForm */
+    {
+    display: flex;
+    justify-content: space-between;
+}
+
+label span,
+p span,
+.mandatory {
+    color: red;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+textarea.enterInput,
+input.enterInput {
+    font-size: 15px;
+    font-weight: 400;
+    width: 15rem;
+    border-color: #cfcfcf;
+}
+
+.innerCompanyName input {
+    width: 100%;
+}
+
+.name,
+.designation,
+.officeContactNumber,
+.residenceContactNumber {
+    margin-right: 10px;
+}
+
+.CertificationHeader,
+.BarCodingHeader,
+.MaterialTransportMode {
+    display: flex;
+}
+
+.CertificationHeader h6 {
+    font-size: 15px;
+}
+
+.CertificationHeader select,
+.BarCodingHeader select,
+.MaterialTransportMode select {
+    padding: 0px 8px;
+    width: 70px;
+    margin-left: 5px;
+}
+
+.alternateSource {
+    margin: 30px 0px;
+}
+
+.alternateSource input {
+    width: 100%;
+}
+
+.otherDetails input {
+    width: 570px;
+}
+
+.futureExpansions input {
+    width: 570px;
+}
+
+.attachFile input {
+    border: 1px solid #cfcfcf;
+    padding: 6px;
+}
+
+.submitBtn1 {
+    text-align: center;
+}
+
+.submitBtn1 button {
+    background-color: #216ebc;
+    color: #fff;
+    text-align: center;
+    width: 10rem;
+    padding: 8px 25px;
+    border-radius: 5px;
+}
+
+/* Financial Details styling */
+
+.bankerDetailsForm {
+    margin-top: 20px;
+}
+
+.bankerRow {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+/* .inputField {
+  flex: 1; 
+}
+
+.enterInput {
+  width: 100%;
+  padding: 8px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+} */
+
+.addNewButton {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.addNewButton:hover {
+    background-color: #45a049;
+}
+
+.attachBalanceSheet,
+.CompanyBankersDetails,
+.turnOverDetails,
+.GSTNo,
+.TINNo,
+.SalesTax,
+.ExciseRegistrationNo,
+.PermanentAccountNo,
+.TDSAccountNo,
+.selectCompany {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgb(192, 191, 191);
+    padding: 20px 20px;
+    margin: 20px auto;
+    /* overflow-x: scroll; */
+}
+
+.attachBalanceSheet p,
+.CompanyBankersDetails p,
+.turnOverDetails p,
+.GSTNo p,
+.TINNo p,
+.SalesTax p,
+.ExciseRegistrationNo p,
+.PermanentAccountNo p,
+.TDSAccountNo p,.selectCompany p {
+    color: #216ebc;
+    font-weight: 600;
+}
+
+.bankerDetailsFrom,
+.turnOverDetailsFrom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bankerDetailsForm .enterInput,
+.turnOverDetailsForm .enterInput {
+    width: 20rem;
+}
+
+/* turnover  */
+.turnOverDetailsForm {
+    margin-top: 20px;
+}
+
+.turnoverRow {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+/* .inputField {
+  flex: 1;
+}
+
+.enterInput {
+  width: 100%;
+  padding: 8px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+} */
+
+.addNewButton {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.addNewButton:hover {
+    background-color: #45a049;
+}
+
+.GSTNo,
+.TINNo,
+.SalesTax,
+.ExciseRegistrationNo,
+.PermanentAccountNo,
+.TDSAccountNo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.GSTNo input,
+.TINNo input,
+.SalesTax input,
+.ExciseRegistrationNo input,
+.PermanentAccountNo input,
+.TDSAccountNo input {
+    width: 55rem;
+    border: 1px solid #cfcfcf;
+}
+
+/* Human Resources Details styling */
+
+.TtlEmployee,
+.WorkerUnion,
+.LongTermSettlement,
+.StrikeDetails,
+.IRSituation,
+.shiftsTimings,
+.TrainingProgramsDetails {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgb(192, 191, 191);
+    padding: 20px 20px;
+    margin: 20px auto;
+}
+
+.TtlEmployee p,
+.WorkerUnion p,
+.LongTermSettlement p,
+.StrikeDetails p,
+.IRSituation p,
+.shiftsTimings p,
+.TrainingProgramsDetails p {
+    color: #216ebc;
+    font-weight: 600;
+}
+
+.row1,
+.row2,
+.row3,
+.row4,
+.row5,
+.row6 {
+    margin: 10px 0px;
+}
+
+.row1,
+.row3,
+.row4 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subCat {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0px;
+    border: 1px solid #cfcfcf;
+    padding: 5px;
+}
+
+.enterSubCatInput {
+    width: 7.8rem;
+    border: 1px solid #cfcfcf;
+}
+
+.annualTrainingPlan input {
+    width: 100%;
+}
+
+.msw {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.msw input {
+    width: 20rem;
+}
+
+.TrainingProgrammesbeingplanned select,
+.TrainingConductedLastyear input {
+    width: 20rem;
+    border: 1px solid #cfcfcf;
+}
+
+.annualTrainingPlan select {
+    width: 13rem;
+    border: 1px solid #cfcfcf;
+}
+
+.WorkerUnion,
+.LongTermSettlement {
+    display: flex;
+}
+
+.StrikeDetails input,
+.IRSituation input,
+.shiftsTimings input,
+.subCovered input {
+    width: 100%;
+}
+
+/* Technical Details styling */
+
+.MachinaryDetails,
+.InhouseTestingDetails,
+.RDFacilities,
+.RawMaterialSource,
+.tracebility,
+.ReactionPlan,
+.AnySpecialProcess,
+.RejectionMonitoringSystem,
+.CustomerSatisfactionIndex,
+.InspectionProcedures,
+.NationalStandards {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgb(192, 191, 191);
+    padding: 20px 20px;
+    margin: 20px auto;
+}
+
+.MachinaryDetails p,
+.InhouseTestingDetails p,
+.RDFacilities p,
+.RawMaterialSource p,
+.tracebility p,
+.ReactionPlan p,
+.AnySpecialProcess p,
+.RejectionMonitoringSystem p,
+.CustomerSatisfactionIndex p,
+.InspectionProcedures p,
+.NationalStandards p {
+    color: #216ebc;
+    font-weight: 600;
+}
+
+.machinaryDetailrow1,
+.InhouseTestingDetailsrow1,
+.RawMaterialSourcerow1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.machinaryDetailrow1 .enterInput,
+.InhouseTestingDetailsrow1 .enterInput {
+    width: 13rem;
+}
+
+.tableForm td {
+    border: none;
+}
+
+.tableForm td {
+    margin: 10px 0px;
+}

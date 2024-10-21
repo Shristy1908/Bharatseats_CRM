@@ -1,0 +1,30 @@
+.viewModallContainer {
+  width: 98%;
+  margin: 10px auto;
+}
+.viewHeader {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgb(214, 214, 214);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+  margin: 10px 0px;
+}
+.link {
+  display: flex;
+}
+.link span {
+  display: flex;
+  align-items: center;
+}
+.backBtn {
+  background-color: #d64228;
+  color: #fff;
+  padding: 7px 20px;
+  border-radius: 5px;
+}
+
+.backBtn:hover {
+  background-color: #d55943;
+}

@@ -1,0 +1,198 @@
+.manageuserContainer {
+  width: 98%;
+  background-color: transparent;
+  padding: 15px 10px;
+  margin: 0 auto;
+}
+
+.manageuserContainer p.title {
+  font-size: 16px;
+  font-weight: 550;
+  padding: 0px 15px;
+  margin-bottom: 1rem;
+}
+
+/* .createbuttonContainer {
+  display: flex;
+  gap: 10px;
+} */
+
+.createbuttonContainer {
+  margin-left: 10px;
+}
+/* 
+.createButton {
+  padding: 50px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+} */
+
+.header {
+  background-color: #1c8033;
+  color: white;
+  font-size: 16px;
+  max-width: 520px;
+}
+
+.inputBox {
+  background-color: #1c8033;
+  color: white;
+  height: 50px;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  border-radius: 10px;
+  /* margin-bottom: 10px;
+  flex-wrap: wrap; */
+}
+
+.ag-header-cell-text {
+  white-space: normal;
+}
+
+.inputBox label {
+  margin: auto 0;
+  float: right;
+}
+
+.inputBox input {
+  padding: 8px;
+  width: 20%;
+  margin-left: 10px;
+  border-radius: 10px;
+  font-size: 17px;
+  color: black;
+  border: none;
+  outline: none;
+  float: right;
+}
+
+.outerContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.ag-theme-alpine {
+  flex-grow: 1;
+  width: 100%;
+  height: 500px;
+  margin: 20px auto;
+  background-color: transparent;
+}
+
+.action-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.action-icons button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 15px;
+}
+
+.action-icons button:hover {
+  color: #1c8033; /* Change color on hover */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .tableContainer p.title {
+    font-size: 18px;
+  }
+
+  .inputBox {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .inputBox label {
+    margin-bottom: 10px;
+  }
+
+  .inputBox input {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .ag-theme-alpine {
+    height: 400px; /* Adjust height for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .tableContainer p.title {
+    font-size: 16px;
+  }
+
+  .header {
+    font-size: 14px;
+  }
+
+  .inputBox {
+    padding: 5px;
+  }
+
+  .inputBox input {
+    font-size: 15px;
+  }
+
+  .ag-theme-alpine {
+    height: 200px;
+  }
+}
+
+.buttonContainer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.createButton,
+.editRoleButton {
+  padding: 5px 15px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #3d8bda;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.createButton:hover {
+  background-color: #2a547b;
+}
+
+.editRoleButton:hover {
+  background-color: #0056b3;
+}
+.ag-header-cell-label {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+}
+.ag-theme-alpine .ag-header-cell {
+  height: 40px;
+  /* Set the desired height */
+  line-height: 15px;
+  padding: 5px 5px;
+  /* Align text vertically */
+}
+/* Set the width and enable text wrapping */
+.ag-theme-alpine .ag-header-cell-text {
+  white-space: normal;
+  /* Allow text to wrap */
+  word-wrap: break-word;
+  /* Ensure long words break properly */
+  text-align: center;
+  /* Adjust text alignment as needed */
+}
+.ag-header-cell-label .ag-header-cell-text {
+  white-space: normal !important;
+}

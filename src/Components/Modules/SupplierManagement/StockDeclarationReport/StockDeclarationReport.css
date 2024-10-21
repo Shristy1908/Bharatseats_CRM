@@ -1,0 +1,40 @@
+/* .SDRContainer {
+    width: 70%;
+    margin-left: 20px;
+}*/
+.sDRContainer {
+  width: 98%;
+  background-color: transparent;
+  padding: 15px 10px;
+  margin: 0 auto;
+}
+.sDRContainer p {
+  font-size: 16px;
+  font-weight: 550;
+  padding: 0px 15px;
+  margin-bottom: 1rem;
+}
+
+.SDRTableContainer {
+  width: 60%;
+}
+
+.SDRViewBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+.SDRContainer h5 {
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 680px) {
+  .SDRTableContainer {
+    width: 90%;
+  }
+}

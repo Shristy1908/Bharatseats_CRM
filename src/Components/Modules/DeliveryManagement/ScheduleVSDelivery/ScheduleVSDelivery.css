@@ -1,0 +1,119 @@
+.ViewSchedulesContainer {
+  width: 98%;
+  background-color: transparent;
+  padding: 15px 10px;
+  margin: 0 auto;
+}
+
+.ViewSchedulesContainer p {
+  font-size: 16px;
+  font-weight: 550;
+  padding: 0px 15px;
+  margin-bottom: 1rem;
+}
+
+.scheduleContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgb(224, 224, 224);
+  margin-top: 2px;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.dropsContainer {
+  padding: 8px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropsContainer label {
+  margin-bottom: 5px;
+}
+
+.react-datepicker-wrapper .fromDate,
+.react-datepicker-wrapper .toDate {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.downloadBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #28a745;
+  color: #fff;
+  height: 40px;
+  padding: 6px 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: 400;
+  transition: 1s all ease;
+}
+.downloadBtn:hover {
+  background-color: #1e7a33;
+}
+
+@media (min-width: 576px) {
+  .scheduleContainer {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .dropsContainer {
+    flex-direction: row;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  .dropsContainer label {
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+
+  .react-datepicker-wrapper .fromDate,
+  .react-datepicker-wrapper .toDate {
+    width: auto;
+  }
+
+  .downloadBtn {
+    margin-left: 10px;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .ViewSchedulesContainer p {
+    font-size: 24px;
+  }
+
+  .scheduleContainer {
+    padding: 16px;
+  }
+
+  .dropsContainer {
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .ViewSchedulesContainer p {
+    font-size: 28px;
+  }
+
+  .scheduleContainer {
+    padding: 24px;
+  }
+
+  .dropsContainer {
+    margin-right: 50px;
+  }
+
+  .downloadBtn {
+    padding: 8px 20px;
+  }
+}

@@ -1,0 +1,111 @@
+.ecnContainer {
+  width: 98%;
+  background-color: transparent;
+  padding: 15px 10px;
+  margin: 0 auto;
+}
+
+.ecnContainer p {
+  font-size: 16px;
+  font-weight: 550;
+  padding: 0px 15px;
+  margin-bottom: 1rem;
+}
+
+.ecContainer {
+  display: flex;
+  gap: 5%;
+}
+
+.aContainer {
+  display: flex;
+  gap: 5%;
+  margin-top: 15px;
+}
+
+.d0Container {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+/* .d1Container {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+.d2Container {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+} */
+.modelContainer {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+.messageContainer {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+select,
+input[type="text"] {
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.react-datepicker-wrapper input {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.ecnbrowseBtn {
+  display: flex;
+  align-items: center;
+  background-color: #3d8bda;
+  color: #fff;
+  padding: 6px 25px;
+  border-radius: 5px;
+  margin-left: 53px;
+  font-weight: 550;
+  transition: 1s all ease;
+}
+.ecnbrowseBtn:hover {
+  background-color: #2a547b;
+}
+
+.submitBtn {
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex-start;
+  margin-left: 25px;
+}
+
+.submitBtn:hover {
+  background-color: #2a547b;
+}
+
+.fileContainer {
+  margin-top: 15px;
+}
+
+.fileContainer input {
+  width: 25%;
+}

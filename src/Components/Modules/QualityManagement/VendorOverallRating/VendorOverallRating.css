@@ -1,0 +1,28 @@
+.dropdownsContainer label {
+  margin-right: 10px;
+}
+
+.dropdownsContainer select {
+  margin-top: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 25%;
+}
+.ag-theme-alpine .blue {
+  background-color: #0047ab;
+  color: #fff;
+  margin-right: 35px;
+}
+
+.ag-theme-alpine .yellow {
+  background-color: #e1ad01;
+  color: #fff;
+  margin-right: 35px;
+}
+
+.ag-theme-alpine .red {
+  background-color: #e70000;
+  color: #fff;
+  margin-right: 35px;
+}

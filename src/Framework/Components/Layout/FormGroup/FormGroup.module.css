@@ -1,0 +1,216 @@
+.BoxGroup {
+  background: #eef7fd;
+  border: 1px solid #adcffc;
+}
+.BoxGroup .BoxGroupTxt {
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  color: #549cf8;
+  line-height: 1.5;
+  text-transform: capitalize;
+  width: 100.1%;
+  margin-top: -11px;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  user-select: none !important;
+  -webkit-user-drag: none !important;
+}
+.BoxGroup .BoxGroupTxt:after,
+.BoxGroup .BoxGroupTxt:before {
+  content: "";
+  border-top: 1px solid #adcffc;
+  flex: 1 0 0px;
+}
+.BoxGroup .BoxGroupTxt:before {
+  margin-right: 6px;
+}
+.BoxGroup .BoxGroupTxt:after {
+  margin-left: 6px;
+}
+
+.InputGroupBox {
+  display: contents;
+}
+.InputGroupBox .InputLabel {
+  font-size: 13px;
+  line-height: 1.5;
+  text-transform: capitalize;
+  font-weight: 400;
+  color: #555;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  grid-template-rows: 32px auto;
+  align-items: center;
+  white-space: nowrap;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  user-select: none !important;
+  -webkit-user-drag: none !important;
+}
+.InputGroupBox .InputLabel.InputReqLabel::after {
+  content: "*";
+  font-size: 16px;
+  color: #f64e60;
+  padding-left: 4px;
+}
+.InputGroupBox .InputGroup {
+  display: grid;
+  grid-template-rows: minmax(32px, max-content) auto;
+  grid-template-columns: auto max-content;
+  grid-row-gap: 2px;
+  row-gap: 2px;
+  height: 100%;
+  align-items: center;
+  position: relative;
+}
+.InputGroupBox .InputGroup .InputControl {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #d6dbdf;
+  padding: 6px 8px;
+  border-radius: 5px !important;
+  outline: none;
+  font-size: 12px;
+  color: #3f4254;
+  font-weight: 400;
+  height: 28px;
+}
+.InputGroupBox .InputGroup .InputControl:focus {
+  border: 1px solid #0071e3 !important;
+  box-shadow: 0 0 0 2px rgba(0, 125, 250, 0.3);
+}
+.InputGroupBox .InputGroup .InputControl::-moz-placeholder {
+  font-size: 12px;
+  color: #3f4254;
+  font-weight: 400;
+}
+.InputGroupBox .InputGroup .InputControl::placeholder {
+  font-size: 12px;
+  color: #3f4254;
+  font-weight: 400;
+}
+.InputGroupBox .InputGroup .InputControl:disabled,
+.InputGroupBox .InputGroup .InputControl[readonly] {
+  background-color: #e9ecef;
+  opacity: 0.8;
+  resize: none !important;
+  cursor: not-allowed !important;
+}
+.InputGroupBox.InputErrorMsgBox .ErrorMsg {
+  color: #f64e60;
+  font-size: 11px;
+  font-weight: 500;
+  grid-column: 1;
+  grid-row: 2;
+}
+.InputGroupBox.InputErrorMsgBox .InputControl,
+.InputGroupBox.InputErrorMsgBox > div > div > div,
+.InputGroupBox.InputErrorMsgBox .Switch_label {
+  border: 1px solid #f64e60 !important;
+  box-shadow: none !important;
+}
+.InputGroupBox.InputErrorMsgBox .InputControl:focus,
+.InputGroupBox.InputErrorMsgBox > div > div > div:focus,
+.InputGroupBox.InputErrorMsgBox .Switch_label:focus {
+  border: 1px solid #f64e60 !important;
+}
+.InputGroupBox.ControlRowSpan .InputControl {
+  height: 100% !important;
+}
+
+.Switch {
+  position: relative;
+  display: block;
+  width: 56px;
+  height: 24px;
+  margin: auto 0 12px 0;
+  border-radius: 18px;
+  cursor: pointer;
+  box-sizing: content-box;
+}
+.Switch .Switch_input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  box-sizing: content-box;
+}
+.Switch .Switch_label {
+  position: relative;
+  display: block;
+  height: inherit;
+  font-size: 11px;
+  height: 26px;
+  text-transform: uppercase;
+  background: #adb5bd;
+  border-radius: inherit;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12),
+    inset 0 0 2px rgba(0, 0, 0, 0.15);
+  box-sizing: content-box;
+  border: 1px solid transparent;
+}
+.Switch .Switch_label:before,
+.Switch .Switch_label:after {
+  position: absolute;
+  top: 52%;
+  margin-top: -0.5em;
+  line-height: 1;
+  transition: inherit;
+  box-sizing: content-box;
+}
+.Switch .Switch_label:before {
+  content: "No";
+  right: 8px;
+  color: #fff;
+  font-weight: 500;
+}
+.Switch .Switch_label:after {
+  content: "Yes";
+  left: 7px;
+  color: #ffffff;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+}
+.Switch .Switch_input:checked ~ .Switch_label {
+  background: linear-gradient(90deg, #4f97ff, #275efe);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15),
+    inset 0 0 3px rgba(0, 0, 0, 0.2);
+}
+.Switch .Switch_input:checked ~ .Switch_label:before {
+  opacity: 0;
+}
+.Switch .Switch_input:checked ~ .Switch_label:after {
+  opacity: 1;
+}
+.Switch .Switch_handle {
+  content: "";
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 1px;
+  margin: auto 0px;
+  width: 42%;
+  height: 92%;
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24);
+  transform: translate3d(2px, 2px, 0);
+  transition: all 0.2s ease-in-out;
+}
+.Switch .Switch_input:checked ~ .Switch_handle {
+  left: 28px !important;
+  box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+.Switch .Switch_label,
+.Switch .Switch_handle {
+  transition: All 0.3s ease;
+  -webkit-transition: All 0.3s ease;
+  -moz-transition: All 0.3s ease;
+  -o-transition: All 0.3s ease;
+} /*# sourceMappingURL=FormGroup.module.css.map */

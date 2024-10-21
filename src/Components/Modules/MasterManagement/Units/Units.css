@@ -1,0 +1,9 @@
+.Active {
+  color:  green;
+  font-weight: 600;
+}
+
+.Inactive {
+  color: red;
+  font-weight: 600;
+}

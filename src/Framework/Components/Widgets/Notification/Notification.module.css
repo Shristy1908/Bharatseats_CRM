@@ -1,0 +1,90 @@
+.wrapper {
+  position: fixed;
+  top: 8px;
+  right: 10px;
+  width: 320px;
+  z-index: 999999999;
+}
+.wrapper .Toast {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  animation: SlideLeft 0.5s;
+  animation-fill-mode: forwards;
+  width: 320px;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid #d6dbdf;
+}
+.wrapper .Toast .ToastBox {
+  display: grid;
+  grid-template-columns: auto 20px;
+  padding: 11px;
+  row-gap: 6px;
+  min-height: 60px;
+}
+.wrapper .Toast .ToastBox button {
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+  background: transparent;
+  border: transparent;
+}
+.wrapper .Toast .ToastBox button svg {
+  color: #85929e;
+  font-size: 18px;
+}
+.wrapper .Toast .ToastBox p {
+  margin: 0;
+  font-size: 13px;
+  word-break: break-all;
+  color: #212529;
+  grid-column: span 2;
+  padding-right: 4px;
+  font-weight: 500;
+}
+.wrapper .Toast.Success .ToastIcon {
+  color: green;
+}
+.wrapper .Toast.Success .ToastBar {
+  background: green;
+}
+.wrapper .Toast.Error .ToastIcon {
+  color: red;
+}
+.wrapper .Toast.Error .ToastBar {
+  background: red;
+}
+.wrapper .Toast.Warning .ToastIcon {
+  color: #f1c40f;
+}
+.wrapper .Toast.Warning .ToastBar {
+  background: #f1c40f;
+}
+.wrapper .Toast.exit {
+  animation: SlideRight 0.5s;
+  animation-fill-mode: forwards;
+}
+.wrapper .Toast .ToastBar {
+  height: 4px;
+  grid-column: span 2;
+}
+
+@keyframes SlideLeft {
+  0% {
+    margin-left: 120%;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+@keyframes SlideRight {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 120%;
+  }
+} /*# sourceMappingURL=Notification.module.css.map */

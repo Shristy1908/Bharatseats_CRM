@@ -1,0 +1,150 @@
+/* .manageRoles {
+  width: 98%;
+  background-color: transparent;
+  padding: 20px 10px;
+  margin: 0 auto;
+}
+.manageRoles p.title {
+  font-size: 16px;
+  font-weight: 550;
+  padding: 0px 15px;
+  margin-bottom: 1rem;
+}
+.table {
+  margin-top: 40px;
+}
+.table-b thead tr {
+  color: white;
+}
+
+.table thead tr th {
+  background-color: #1c8033;
+}
+.role-box {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.input-group {
+  margin-bottom: 20px;
+} */
+
+/* .card {
+    border-radius: 10px;
+  }
+  
+  .card-header {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+  } */
+
+/* .role-box {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.table {
+  margin-top: 30px;
+}
+.table-b thead tr {
+  color: white;
+}
+
+.table thead tr th {
+  background-color: #1c8033;
+} */
+
+/* .table-hover tbody tr:hover {
+    background-color: transparent;
+  } */
+
+.manageRoles {
+  width: 98%;
+  background-color: transparent;
+  padding: 15px 10px;
+  margin: 0 auto;
+}
+
+.manageRoles p.title {
+  font-size: 16px;
+  font-weight: 550;
+  padding: 0px 15px;
+  margin-bottom: 1rem;
+}
+
+.role-box {
+  max-width: 800px;
+  margin-left: 120px;
+  /* margin: 0 auto; */
+}
+
+.roleInputBox {
+  display: flex;
+  gap: 10px;
+  margin-top: 50px;
+  /* margin-bottom: 20px; */
+}
+
+.roleInput {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.addRoleButton {
+  padding: 8px 16px;
+  background-color: #1c8033; /* Using the same green color as the table header */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.addRoleButton:hover {
+  background-color: #155d27; /* Darker shade for hover effect */
+}
+
+.roleTable {
+  width: 100%;
+  margin-top: 40px;
+  border-collapse: collapse;
+}
+
+.roleTable thead tr {
+  color: white;
+}
+
+.roleTable thead th {
+  background-color: #1c8033;
+  padding: 10px;
+  text-align: left;
+}
+
+.roleTable td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.disabledRole {
+  color: #888;
+  text-decoration: line-through;
+}
+
+.disableButton {
+  padding: 5px 10px;
+  background-color: #f0ad4e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.disableButton:hover {
+  background-color: #ec971f;
+}

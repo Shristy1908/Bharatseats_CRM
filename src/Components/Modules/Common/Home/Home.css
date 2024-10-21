@@ -1,0 +1,71 @@
+.homeContainer1 {
+  width: 98%;
+  background-color: transparent;
+  padding: 20px 10px;
+  margin: 0 auto;
+}
+.homeContainer1 p.title {
+  font-size: 20px;
+  font-weight: 550;
+  padding: 0px 15px;
+  margin-bottom: 1rem;
+}
+.header {
+  background-color: #1c8033;
+  color: white;
+  font-size: 16px;
+}
+.inputBox3 {
+  background-color: #1c8033;
+  color: white;
+  height: 50px;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.inputBox3 label {
+  margin: auto 0;
+  float: right;
+}
+.inputBox3 input {
+  padding: 8px;
+  width: 20%;
+  margin-left: 10px;
+  border-radius: 10px;
+  font-size: 17px;
+  color: black;
+  border: none;
+  outline: none;
+  float: right;
+}
+.outerContainer {
+  width: 100%;
+  height: 100%;
+}
+.ag-theme-alpine {
+  flex-grow: 1;
+  width: 100%;
+  height: 500px;
+  margin: 20px auto;
+  background-color: transparent;
+}
+/* .ag-header-cell-label {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+}
+.ag-theme-alpine .ag-header-cell {
+  height: 40px;
+  line-height: 15px;
+  padding: 5px 5px;
+}
+.ag-theme-alpine .ag-header-cell-text {
+  white-space: normal;
+  word-wrap: break-word;
+  text-align: center;
+}
+.ag-header-cell-label .ag-header-cell-text {
+  white-space: normal !important;
+} */

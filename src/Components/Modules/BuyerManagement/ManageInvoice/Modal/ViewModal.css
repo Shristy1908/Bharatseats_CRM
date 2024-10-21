@@ -1,0 +1,44 @@
+.viewModalContainer {
+  width: 98%;
+  margin: 10px auto;
+}
+.remarkSection {
+  width: 100%;
+  border: 1px solid rgb(179, 179, 179);
+  padding: 20px 20px;
+}
+.remarkSection .AcknowledgeBtn,
+.DeclineBtn {
+  background-color: #427051;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  margin: 5px 10px;
+  font-size: 15px;
+}
+.remarkSection .AcknowledgeBtn:hover {
+  background-color: #1b833e;
+}
+.remarkSection .DeclineBtn {
+  background-color: #935b51;
+}
+.remarkSection .DeclineBtn:hover {
+  background-color: #a02f1b;
+}
+.DropdownContainer,
+.DateAndBtnContainer {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgb(224, 224, 224);
+  margin-top: 20px;
+  padding: 5px 0px;
+  border-radius: 5px;
+}
+.dropDown,
+.searchInputText {
+  width: 206px;
+}
+.dropDown,
+.searchInputText,
+.searchBtn {
+  margin: 8px 10px;
+}

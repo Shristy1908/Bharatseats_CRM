@@ -1,0 +1,123 @@
+.BtStrp_Btn {
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  border: 1px solid transparent;
+  cursor: pointer;
+  vertical-align: middle;
+  border-radius: 0.25rem;
+  grid-column-gap: 8px;
+  display: grid;
+  grid-template-columns: max-content;
+  align-items: center;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  outline: none;
+  background-color: #fff;
+  color: #222;
+  line-height: 1.5;
+  height: -moz-max-content;
+  height: max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.BtStrp_Btn svg {
+  font-size: 14px !important;
+}
+
+.BtStrp_icon_Btn {
+  grid-template-columns: repeat(2, max-content);
+  grid-column-gap: 8px;
+}
+
+.BtStrp_Btn:active {
+  transform: scale(0.96);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.08);
+}
+
+.BtStrp_primary_Btn {
+  background-color: #3699ff !important;
+  color: #fff !important;
+}
+
+.BtStrp_secondary_Btn {
+  background-color: #50c6d0 !important;
+  color: #fff !important;
+}
+
+.BtStrp_grey_Btn {
+  background-color: #85929e !important;
+  color: #fff !important;
+}
+
+.BtStrp_orange_Btn {
+  background-color: #f26623 !important;
+  color: #fff !important;
+}
+
+.BtStrp_danger_Btn {
+  background-color: #dc3545 !important;
+  color: #fff !important;
+}
+
+.BtStrp_success_Btn {
+  background-color: #28a745 !important;
+  color: #fff !important;
+}
+
+.BtStrp_fail_Btn {
+  background-color: #dc3545 !important;
+  color: #fff !important;
+}
+
+.BtStrp_Btn:hover {
+  opacity: 0.7;
+}
+
+.FormBtnActive {
+  pointer-events: none !important;
+}
+
+.BtStrp_btn__spinner {
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.BtStrp_btn__bounce1,
+.BtStrp_btn__bounce2,
+.BtStrp_btn__bounce3 {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 100%;
+  display: inline-block;
+  animation: BtStrp_btn__animation 1.4s ease-in-out infinite both;
+}
+
+.BtStrp_btn__bounce1 {
+  animation-delay: -0.32s;
+  margin-right: 2px;
+}
+
+.BtStrp_btn__bounce2 {
+  animation-delay: -0.16s;
+  margin-right: 2px;
+}
+
+@keyframes BtStrp_btn__animation {
+  0%,
+  80%,
+  100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+} /*# sourceMappingURL=BootStrapButton.css.map */

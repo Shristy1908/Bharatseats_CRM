@@ -1,0 +1,4 @@
+{
+  "Authenticate": "http://14.141.50.214:8090/BSVENDORPORTAL/validateLogin",
+  "BaseUrl": "http://14.141.50.214:8090/"
+}

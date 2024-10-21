@@ -1,0 +1,14 @@
+.exportBtn button {
+  background-color: #3d8bda;
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 5px;
+  margin: 10px 10px;
+}
+.exportBtn button:hover {
+  background-color: #2a547b;
+}
+.popUpTableContainer {
+  width: 98%;
+  margin: 0 auto;
+}

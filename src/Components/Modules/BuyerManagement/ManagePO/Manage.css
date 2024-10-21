@@ -1,0 +1,69 @@
+.tabContainer {
+  width: 98%;
+  background-color: transparent;
+  padding: 20px 10px;
+  margin: 0 auto;
+}
+.SupplierSchedular {
+  margin: 20px 15px;
+}
+.SupplierSchedular p.title {
+  font-size: 20px;
+  font-weight: 550;
+  padding: 0px 15px;
+  margin-bottom: 1rem;
+}
+.card-header {
+  background-color: #1c8033;
+}
+.card-header .nav-link {
+  color: white;
+}
+.fromDate,
+.toDate {
+  border: 1px solid rgb(198, 197, 197);
+}
+
+.fromDate,
+.toDate,
+.searchBtn,
+.clearBtn {
+  margin: 5px 10px;
+}
+.searchBtn,
+.clearBtn {
+  width: 100px;
+  padding: 8px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #3d8bda;
+  color: #fff;
+}
+.clearBtn {
+  background-color: rgb(123, 122, 122);
+}
+
+.searchBtn:hover {
+  background-color: #2a547b;
+}
+.clearBtn:hover {
+  background-color: rgb(67, 67, 67);
+}
+.MSTableContainer {
+  width: 100%;
+}
+.ag-theme-alpine {
+  width: 100%;
+}
+.DateAndBtnContainer {
+  justify-content: space-between;
+}
+.react-datepicker-wrapper {
+  position: relative;
+  z-index: 9998;
+}
+.ag-header-cell-label {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+}

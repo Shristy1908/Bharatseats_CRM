@@ -1,0 +1,126 @@
+.login_ErrorTxt {
+  font-size: 12px;
+  color: #e54b4b;
+  font-weight: 600;
+  float: left;
+  margin-top: 0.2rem;
+  bottom: 0;
+}
+
+.OuterContainer {
+  text-align: center;
+  align-items: center;
+}
+
+.OuterContainer img {
+  width: 100px;
+  height: 80px;
+  margin: 5px auto;
+}
+
+.OuterContainer p {
+  color: rgb(33, 33, 252);
+}
+
+.signInContainer {
+  background-image: url("../../../../assets/images/Background.jpg");
+  background-size: cover;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerContainer {
+  position: relative;
+  width: 400px;
+  height: 350px;
+  border-radius: 10px;
+  color: black;
+  box-shadow: 0px 0px 10px rgb(197, 197, 197);
+  background-color: #fff;
+}
+
+.formContainer {
+  width: 100%;
+  padding: 40px;
+}
+
+.formContainer h1 {
+  text-align: center;
+  font-size: 25px;
+  color: rgb(58, 129, 242);
+}
+
+.formContainer .logininputContainer {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  background-color: rgb(236, 234, 234);
+  color: black;
+  margin: 1rem 0;
+  padding: 10px;
+  justify-content: space-between;
+  border-radius: 8px;
+}
+
+.logininputContainer input {
+  background-color: rgb(236, 234, 234);
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+}
+
+.innerContainer .icon {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  color: gray;
+}
+
+.rememberMe_ForgotPass {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rememberMe_ForgotPass a {
+  text-decoration: none;
+  color: rgb(58, 129, 242);
+}
+
+.loginBtn button {
+  padding: 10px 20px;
+  background-color: rgb(58, 129, 242);
+  color: #fff;
+  width: 100%;
+  margin: 1rem 0;
+  border-radius: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s all ease-in;
+}
+
+.loginBtn button:hover {
+  background-color: rgb(125, 169, 240);
+  color: #fff;
+}
+
+.clientName {
+  display: flex;
+  width: 100%;
+  height: 25px;
+  margin-top: 1rem;
+}
+
+.clientName img.client1 {
+  height: 100%;
+}
+.clientName img.client2 {
+  height: 100%;
+}

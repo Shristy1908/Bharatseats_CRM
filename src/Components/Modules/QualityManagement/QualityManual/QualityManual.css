@@ -1,0 +1,6 @@
+.qmfileContainer {
+  display: flex;
+}
+.qmfileContainer input {
+  width: 50%;
+}
