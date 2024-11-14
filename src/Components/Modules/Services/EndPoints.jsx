@@ -9,6 +9,7 @@ const ApiEndPonits = {
     addUser: "BHARATSEATS/addUser",
     listOfUsers: "BHARATSEATS/listOfUsers",
     updateUser: "BHARATSEATS/updateUser",
+    addRole: "BHARATSEATS/addRole",
     listOfMaterial: "BHARATSEATS/listOfMaterial",
     addMaterial: "BHARATSEATS/addMaterial",
     updateMaterial: "BHARATSEATS/updateMaterial",

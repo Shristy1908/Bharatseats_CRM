@@ -1,30 +1,18 @@
 import React, { useEffect, useState } from "react";
 import "../ManageRoles/ManageRoles.css";
-import { getbrHeadTypeList } from "../../Services/Method";
+import { addRole, getbrHeadTypeList } from "../../Services/Method";
 import { AlertMessage } from "../../../../Framework/Components/Widgets";
 
 const ManageRoles = () => {
   const setAlertMessage = AlertMessage();
-  const [roles, setRoles] = useState([
-    { name: "Buyer", disabled: false },
-    { name: "Supplier", disabled: false },
-    { name: "BSLUser", disabled: false },
-    { name: "R&D", disabled: false },
-    { name: "Visitor", disabled: false },
-    { name: "Administrator", disabled: false },
-    { name: "Quality", disabled: false },
-  ]);
   const [newRole, setNewRole] = useState("");
-
-  const handleAddRole = () => {
-    if (newRole.trim()) {
-      setRoles([...roles, { name: newRole, disabled: false }]);
-      setNewRole("");
-    }
-  };
   const handleDisable = (data) => {
     alert(`You Can't Change`);
   };
+
+  const [formValues, setFormValues] = useState({
+    txtRoleName: "",
+  });
 
   const [roleList, setRoleList] = useState([]);
 
@@ -56,6 +44,73 @@ const ManageRoles = () => {
     }
   };
 
+  const updateState = (name, value) => {
+    setFormValues({ ...formValues, [name]: value });
+  };
+  // const handleUserChange = (e) => {
+  //   setSelectedUser(e.target.value);
+  // };
+
+  // const updateNewlyUser = (newlyAddedUser) => {
+  //   debugger;
+  //   console.log("newlyAddedUser", newlyAddedUser);
+  //   if (gridApi) {
+  //     const rowData = [];
+  //     if (newlyAddedUser && newlyAddedUser.length > 0) {
+  //       newlyAddedUser.forEach((data) => {
+  //         rowData.push(data);
+  //       });
+  //     }
+  //     gridApi.forEachNode((node) => rowData.push(node.data));
+  //     gridApi.setRowData(rowData);
+  //     usersList.unshift(newlyAddedUser);
+  //     setUsersList([]);
+  //     setUsersList(usersList);
+  //     console.log(usersList);
+  //   }
+  // };
+
+  const handleAddRole = async () => {
+    debugger;
+    console.log("function call");
+    try {
+      const formdata = {
+        roleId: 0,
+        roleName:
+          formValues && formValues.txtRoleName ? formValues.txtRoleName : "",
+        isActive: "",
+      };
+      const result = await addRole(formdata);
+      if (result.response.successCode === 1) {
+        setAlertMessage({
+          type: "success",
+          message: result.response.successMsg,
+        });
+        // const newlyAddedUser = [
+        //   {
+        //     roleName:
+        //       formValues && formValues.txtRoleName
+        //         ? formValues.txtRoleName
+        //         : "",
+        //   },
+        // ];
+        // console.log(newlyAddedUser);
+        // updateNewlyUser(newlyAddedUser);
+        // handleCreateNew();
+      } else {
+        setAlertMessage({
+          type: "error",
+          message: result.response.successMsg,
+        });
+      }
+    } catch (error) {
+      setAlertMessage({
+        type: "error",
+        message: error,
+      });
+    }
+  };
+
   useEffect(() => {
     getRoleList();
     console.log(roleList);
@@ -70,12 +125,13 @@ const ManageRoles = () => {
             <div className="roleInputBox">
               <input
                 type="text"
-                className="roleInput"
+                className="txtRoleName"
+                name="txtRoleName"
                 placeholder="Enter New Role"
-                value={newRole}
-                onChange={(e) => setNewRole(e.target.value)}
+                value={formValues.txtRoleName}
+                onChange={(e) => updateState("txtRoleName", e.target.value)}
               />
-              <button className="addRoleButton" onClick={handleAddRole}>
+              <button className="addRoleButton" onClick={() => handleAddRole()}>
                 Add Role
               </button>
             </div>

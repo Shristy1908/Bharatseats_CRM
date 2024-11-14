@@ -298,7 +298,6 @@ function ProfileManagement() {
     profileId,
     profileName
   ) => {
-    debugger;
     try {
       setIsLoadingMenuList(true);
 
@@ -313,7 +312,7 @@ function ProfileManagement() {
 
       const result = await menuListForProfile(formData);
       setIsLoadingMenuList(false);
-      debugger;
+
       if (result.response.successCode === 1) {
         if (filterBy === "ASSIGN_MENU" || filterBy === "UNASSIGN_MENU") {
           if (
@@ -321,8 +320,10 @@ function ProfileManagement() {
             result.response.responseData.ProfileMenuID !== 0
           ) {
             if (gridApi) {
+              const itemsToUpdate = [];
               gridApi.forEachNode(function (rowNode) {
                 if (rowNode.data.menuId === menuId) {
+                  debugger;
                   if (
                     filterBy === "ASSIGN_MENU" &&
                     result.response.responseData &&
@@ -338,9 +339,16 @@ function ProfileManagement() {
                     rowNode.data.assignmentFlag = 0;
                     rowNode.data.profileId = profileId;
                   }
+                  itemsToUpdate.push(rowNode.data);
                   rowNode.setData(rowNode.data);
+                  console.log("Updated row data:", rowNode.data);
                 }
               });
+              // gridApi.updateRowData({
+              //   update: itemsToUpdate,
+              // });
+              // gridApi.refreshCells({ force: true });
+              console.log(itemsToUpdate);
             }
             setAlertMessage({
               type: "success",

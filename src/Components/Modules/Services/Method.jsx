@@ -280,6 +280,44 @@ export const listOfUsers = async (formdata) => {
   }
 };
 
+export const addRole = async (formdata) => {
+  debugger;
+  try {
+    const requestData = {
+      main: {
+        ...formdata,
+      },
+    };
+    const result = await apiCallingCommon(
+      requestData,
+      ApiEndPonits.bsEndPoints.addRole
+    );
+    if (result.successCode === 1) {
+      if (result.responseData) {
+        return {
+          response: result,
+        };
+      } else {
+        return {
+          response: result,
+        };
+      }
+    } else {
+      return {
+        response: result,
+      };
+    }
+  } catch (error) {
+    return {
+      response: {
+        successCode: 0,
+        responseData: null,
+        successMsg: error,
+      },
+    };
+  }
+};
+
 export const listOfMaterial = async (formdata) => {
   try {
     const requestData = {

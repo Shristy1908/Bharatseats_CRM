@@ -1,9 +1,11 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./Header.css";
+import { getSessionStorage } from "../../Common/Login/Auth/auth";
 
 function Header() {
   const [showDropdown, setShowDropdown] = useState(false);
   const dropdownRef = useRef(null);
+  const users = getSessionStorage("user");
 
   const handleAdminClick = () => {
     setShowDropdown(!showDropdown);
@@ -36,13 +38,13 @@ function Header() {
             onClick={handleAdminClick}
             role="button"
           >
-            <i className="fas fa-user-shield"></i> Admin
+            <i className="fas fa-user-shield"></i> {users.userName}
           </button>
           {showDropdown && (
             <div className="dropdown-menu dropdown-menu-right show">
               <li className="nav-item">
                 <a className="nav-link" href="/profile" role="button">
-                  <i className="fas fa-user"></i> Profile
+                  <i className="fas fa-user"></i> {users.userName}
                 </a>
                 <a className="dropdown-item" href="/logout" role="button">
                   <i className="fas fa-sign-out-alt"></i> Logout
